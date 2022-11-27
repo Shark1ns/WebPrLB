@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<title>Ушаков Задание №3</title>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+    div{
+        position: absolute;
+    }
+    </style>
+</head>
+<body>
+    <div id="kvadrat">
+    <div id="kvadr">Слово</div>
+</div>
+</body>
+<script>
+var left = 0;
+var y = 0;
+window.onkeydown = function move_left(){
+    if(event.keyCode==37){
+        left=left-10;
+        document.getElementById('kvadr').style.left = left + 'px';
+    }
+        else if(event.keyCode==39){
+            left=left+10;
+            document.getElementById('kvadr').style.left= left + 'px';
+        }
+else if(event.keyCode==40){
+y=y+10;
+document.getElementById('kvadr').style.top= y + 'px';
+}
+else if(event.keyCode==38){
+y=y-10;
+document.getElementById('kvadr').style.top= y + 'px';
+}
+
+};
+</script>
+<br><h4>Выполнил студент группы ПИ-321 Ушаков Милан</h4></br>
+</html>

@@ -1,0 +1,34 @@
+<html>
+<title>Ушаков Задание №4</title>
+<head>
+<script type="text/javascript" src="jquery-3.6.0.js"></script>
+</head>
+<body>
+ <div class="block">
+      Подвигайте мышкой
+</div>
+<div class="coords">
+    X: <span class="x"></span><br>
+    Y: <span class="y"></span>
+</div> 
+ <script type="text/javascript">
+ document.querySelector('.block').onmousemove = function(event) {
+    event = event || window.event; // кроссбраузерность
+    console.log(event); // вывод в консоль
+    document.querySelector('.x').innerHTML = event.offsetX;
+    document.querySelector('.y').innerHTML = event.offsetY;
+}
+</script>
+</body>
+ <style>.block {
+    width: 200px; /* ширина */
+    height: 150px; /* высота */
+    border: 10px solid plum; /* толщина и цвет сплошной рамки */
+    margin: 40px auto; /* отступ сверху и горизонтальное выравнивание по центру */
+    text-align: center; /* текст в центре по горизонтали */
+    line-height: 150px; /* текст в центре по вертикали */
+    font-size: 20px; /* размер шрифта */
+    font-family: sans-serif; /* семейство шрифтов */
+</style>
+<h4>Выполнил студент группы ПИ-321 Ушаков Милан</h4>
+</html>

@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html>
+<title>Ушаков Задание №6</title>
+<head>
+<title>JQuery Simple Vote</title>
+<script type="text/javascript" src="jquery-3.6.0.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+    $("#container div a").click(function() {
+        $(this).parent().animate({
+           width: '+=100px'
+        }, 500);
+ 
+        $(this).prev().html(parseInt($(this).prev().html()) + 1);
+        return false;
+    });
+});
+</script>
+<style type="text/css">
+    * {
+        font-family: Arial, "Free Sans";
+    }
+    #container {
+        margin-top: 10px;
+        color: #fff;
+    }
+    #question {
+        display: block;
+        padding: 20px;
+        font-weight: normal;
+        letter-spacing: 1px;
+        margin-bottom: 5px;
+        padding: 5px;
+        font-size: 20px;
+    }
+    #container div {
+        font-weight: bold;
+        letter-spacing: 1px;
+        background: #0099cc;
+        margin-bottom: 15px;
+        padding: 5px;
+        font-size: 10px;
+        color: #ffffff;
+        border-left: 10px solid #333;
+        width: 200px;
+        -webkit-border-radius: 0.5em;
+        -moz-border-radius: 0 0.5em 0.5em 0;
+        border-radius: 0 1.5em 1.5em 0;
+    }
+    #container div a {
+        border-radius: 0.3em;
+        text-decoration: none;
+        color: #0099cc;
+        padding: 5px 5px;
+        background: #333;
+        margin: 0 20px;
+    }
+    #container div a:hover {
+        color: #fff;
+    }
+    body {
+        margin: 0;
+        padding: 0;
+        background: #ffffff url('trentanove.gif') repeat right top;
+    }
+</style>
+</head>
+<body>
+<div id="question">
+<div><span id="question">Какой номер вашей группы?</span></div>
+</div>
+</div>
+  <div id="container">
+      
+      <div><span>0</span><a href="">Проголосовать</a>ПИ-321</div>
+      <div><span>0</span><a href="">Проголосовать</a>Пи-322</div>
+      <div><span>0</span><a href="">Проголосовать</a>Пи-323</div>
+  </div>
+<div id="question">
+<div><span id="question">Ваш любимый язык?</span></div>
+</div>
+  <div id="container">
+      
+      <div><span>0</span><a href="">Проголосовать</a>PHP</div>
+      <div><span>0</span><a href="">Проголосовать</a>Ruby</div>
+      <div><span>0</span><a href="">Проголосовать</a>Java</div>
+      <div><span>0</span><a href="">Проголосовать</a>ASP</div>
+      <div><span>0</span><a href="">Проголосовать</a>Perl</div>
+      <div><span>0</span><a href="">Проголосовать</a>C++</div>
+  </div>
+<div id="question">
+<div><span id="question">Вам нравятся лабораторные работы по Веб-технологиям?</span></div>
+</div>
+  <div id="container">
+      
+      <div><span>0</span><a href="">Проголосовать</a>Да</div>
+      <div><span>0</span><a href="">Проголосовать</a>Да</div>
+  </div>
+</body>
+<h4>Выполнил студент группы ПИ-321 Ушаков Милан</h4>
+</html>

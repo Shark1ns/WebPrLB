@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<title>Ушаков Задание №1</title>
+<head>
+    <meta charset="utf-8" />
+    <script language="JavaScript">
+        function message_2 (){
+        alert("Welcome on my page");
+        }
+        </script>
+</head>
+<body>
+    <p> Произвольный текст 1 </p>
+    <p> произвольныйтекст 2 </p>
+    <script>
+        document.getElementsByTagName("p")[0]
+            .insertAdjacentHTML("afterend", "<form><label>Welcome on my page</label><input type='button' value='OK'></form>");
+       var form = document.forms[0];
+       form.addEventListener("click", message_2);
+     </script>
+</body>
+<h4>Выполнил студент группы ПИ-321 Ушаков Милан</h4>
+</html>
